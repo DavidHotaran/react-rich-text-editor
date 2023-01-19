@@ -54,9 +54,7 @@ const RTE = () => {
                 </div>
             </div>
             <button className="bg-green-500 rounded-lg p-2" onClick={() => setOutput(inputFocus.current.innerHTML)}>submit</button>
-            <div>
-                {output}
-            </div>
+            <div dangerouslySetInnerHTML={{__html:output}}></div>
         </>
     );
 };
